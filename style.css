@@ -1,0 +1,51 @@
+body {
+    background: #fafafa;
+  }
+  
+  .menino {
+    position: absolute;
+    bottom: 1px;
+    background-image: url(menino.png);
+    width: 60px;
+    height: 60px;
+  }
+  
+  .mosca {
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(mosca.png);
+  }
+  
+  .game-over {
+    display: flex;
+    align-items: center;  
+    color: #666;
+    font-family: arial;
+    margin-left: 300px;
+    margin-right: 300px;
+     
+    
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+    
+  }
